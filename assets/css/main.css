@@ -2189,3 +2189,9 @@ input, select, textarea {
 			}
 
 		}
+#main > .panel.intro > p {
+    font-size: 0.75em; 
+    line-height: 1.5;
+	text-align: justify;
+	padding-right: 1.5em;
+}
