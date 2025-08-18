@@ -23,48 +23,80 @@ permalink: /
 <!-- Work -->
 <article id="work" class="panel">
     <header>
-        <h2>Work</h2>
+        <h2>Portfolio</h2>
     </header>
     <p>
-        Here’s a selection of my work — feel free to click on any project to dive deeper into the details. I’d love to hear your thoughts, so don’t forget to share feedback (what you like or what I could improve) through the contact page.
+        Here’s a selection of my work — feel free to click on any project to dive deeper into the details. 
+		Each project demonstrates different data science and analytics-related technical skills and business applications.
+		I’d love to hear your thoughts, so don’t forget to share feedback (what you like or what I could improve) through the contact page.
+		
     </p>
-    <section>
-        <div class="row">
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+    <section class="portfolio-projects">
+        <!-- Project 1 -->
+        <div class="project-item">
+            <div class="project-image">
+                <img src="images/project-01.jpeg" alt="Customer Churn Prediction" />
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+            <div class="project-content">
+                <div class="project-title">
+                    <h3>Customer Churn Prediction Model</h3>
+                </div>
+                <p class="project-tech">Python | Scikit-learn | XGBoost | SQL</p>
+                <div class="project-description">
+                    <p>Built an ensemble model combining gradient boosting and logistic regression to predict customer churn with 89% accuracy. Implemented feature engineering pipeline and deployed via Flask API.</p>
+                </div>
+                <a href="#" class="project-link">View Details</a>
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+            <div class="project-image">
+                <img src="images/project-02.jpeg" alt="Sales Forecasting Dashboard" />
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+            <div class="project-content">
+                <div class="project-title">
+                    <h3>Sales Forecasting Dashboard</h3>
+                </div>
+                <p class="project-tech">R | Shiny | Time Series | Tableau</p>
+                <div class="project-description">
+                    <p>Developed ARIMA and Prophet models for multi-horizon sales forecasting. Created interactive dashboard for stakeholders with 95% confidence intervals and scenario planning.</p>
+                </div>
+                <a href="#" class="project-link">View Details</a>
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+            <div class="project-image">
+                <img src="images/project-03.jpg" alt="A/B Testing Framework" />
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+            <div class="project-content">
+                <div class="project-title">
+                    <h3>A/B Testing Framework</h3>
+                </div>
+                <p class="project-tech">Python | Statsmodels | Bayesian Analysis</p>
+                <div class="project-description">
+                    <p>Designed statistical framework for product experiments including power analysis, sequential testing, and multi-armed bandit optimization. Reduced experiment duration by 40%.</p>
+                </div>
+                <a href="#" class="project-link">View Details</a>
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item">
+            <div class="project-image">
+                <img src="images/project-04.jpg" alt="NLP Sentiment Analysis" />
             </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+            <div class="project-content">
+                <div class="project-title">
+                    <h3>Customer Sentiment Analysis Pipeline</h3>
+                </div>
+                <p class="project-tech">Python | BERT | spaCy | Docker</p>
+                <div class="project-description">
+                    <p>Implemented transformer-based sentiment classification for customer reviews. Built automated pipeline processing 10K+ reviews daily with real-time monitoring and alerting.</p>
+                </div>
+                <a href="#" class="project-link">View Details</a>
             </div>
         </div>
     </section>
@@ -75,7 +107,7 @@ permalink: /
     <header>
         <h2>Contact Me</h2>
     </header>
-    <form action="#" method="post">
+    <form action="https://formspree.io/f/mkgzapee" method="POST">
         <div>
             <div class="row">
                 <div class="col-6 col-12-medium">
