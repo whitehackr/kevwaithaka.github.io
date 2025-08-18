@@ -2191,7 +2191,7 @@ input, select, textarea {
     font-size: 0.75em; 
     line-height: 1.5;
 	text-align: justify;
-	padding-right: 1.5em;
+	padding: 0 1.5em;
 }
 
 
@@ -2429,4 +2429,23 @@ html, body {
 #footer .copyright,
 #footer .copyright li {
     color: #ffffff !important;
+}
+
+
+/* Ensure header content aligns with paragraph */
+#main > .panel.intro header {
+    padding: 3.5em 1.5em 3.5em 2.5em; /* Reduced right padding to match paragraph */
+}
+
+/* Mobile alignment fix */
+@media screen and (max-width: 980px) {
+    #main > .panel.intro header {
+        padding: 4em 1.5em; /* Equal horizontal padding */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #main > .panel.intro header {
+        padding: 2.75em 1.5em 2.5em 1.5em; /* Equal horizontal padding */
+    }
 }
