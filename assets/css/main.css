@@ -1306,11 +1306,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
-		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background: linear-gradient(to bottom, #2c5f5f 0%, #2c5f5f 60%, #66cccc 100%);
 		background-attachment: fixed;
 		overflow-y: scroll;
+		min-height: 100vh;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
