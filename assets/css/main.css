@@ -2096,7 +2096,7 @@ input, select, textarea {
 
 					#main > .panel.intro header p {
 						letter-spacing: -0.015em;
-						font-size: 1.25em;
+						font-size: 0.8em !important;
 						margin: 0.25em 0 0 0;
 					}
 
@@ -2142,15 +2142,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		color: rgba(255, 255, 255, 0.45);
+		color: #ffffff !important;  /* Pure white */
 		text-align: center;
 		padding: 2em 0 0 0;
 		font-size: 0.75em;
 	}
 
 		#footer a {
-			color: #ddd;
-			color: rgba(255, 255, 255, 0.65);
+			color: #ffffff !important;  /* Pure white */
 			-moz-transition: color .25s ease-in-out;
 			-webkit-transition: color .25s ease-in-out;
 			-ms-transition: color .25s ease-in-out;
@@ -2276,7 +2275,9 @@ input, select, textarea {
 
 .project-description p {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5 !important;
+    text-align: justify !important;
 }
 
 .project-link {
@@ -2328,4 +2329,104 @@ input, select, textarea {
 
 #contact input[type="submit"]:active {
     background-color: #004577 !important;
+}
+
+/* ===== COMPLETE TYPOGRAPHY SYSTEM ===== */
+
+/* 1. ALL MAIN HEADERS (Name, Portfolio, Contact Me) */
+h1, h2, 
+#main > .panel.intro header h1,
+#main > .panel.intro header p,
+article header h2 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400 !important;
+    color: #363636 !important;
+}
+
+/* 2. ALL SUB-HEADERS (Project titles, section titles) */
+h3, h4, h5, h6,
+.project-content h3,
+.project-title h3 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400 !important;
+    color: #363636 !important;
+}
+
+/* 3. ALL BODY TEXT (Paragraphs, descriptions) */
+p, 
+article p,
+.project-description p,
+#main > .panel.intro > p,
+.portfolio-projects p {
+    font-size: 0.75em !important;  /* Match home page size */
+    line-height: 1.5 !important;   /* Match home page line-height */
+    text-align: justify !important; /* Match home page alignment */
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300 !important;
+    color: #777777 !important;
+}
+
+/* 4. ALL CAPTIONS (Tech stacks, form labels, small text) */
+.project-tech,
+form label,
+small,
+.caption,
+#footer,
+#footer .copyright {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300 !important;
+    color: #777777 !important;
+}
+
+/* 5. ALL INTERACTIVE ELEMENTS (Buttons, links) */
+.project-link,
+input[type="submit"],
+input[type="button"],
+button,
+.button,
+a {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+/* 6. ALL FORM ELEMENTS */
+input[type="text"],
+input[type="email"], 
+textarea,
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300 !important;
+    color: #777777 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999 !important;
+}
+
+/* 7. NAVIGATION TOOLTIPS */
+#nav a span {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+/* 8. ENSURE INHERITANCE OVERRIDE */
+* {
+    font-family: inherit;
+}
+
+/* 9. ROOT FALLBACK */
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #777777;
+}
+
+#footer,
+#footer *,
+#footer a,
+#footer .copyright,
+#footer .copyright li {
+    color: #ffffff !important;
 }
